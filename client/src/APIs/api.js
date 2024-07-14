@@ -3,7 +3,7 @@ import axios from "axios";
 export const register = async (data) => {
   try {
     const response = await axios.post(
-      "http://localhost:8080/api/v1/user/register",
+      "https://bliss-list.vercel.app/api/v1/user/register",
       data
     );
     return response;
@@ -15,7 +15,7 @@ export const register = async (data) => {
 export const login = async (data) => {
   try {
     const response = await axios.post(
-      "http://localhost:8080/api/v1/user/login",
+      "https://bliss-list.vercel.app/api/v1/user/login",
       data
     );
     return response;
